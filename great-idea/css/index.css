@@ -64,19 +64,23 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
 .container {
 	width: 880px;
 	margin: 0 auto;
 }
 
 header {
+	display: flex;
+	flex-wrap: wrap;
 	position: fixed;
 	top: 0;
 	background-color: #081379c9;
 }
 
 header nav {
-	display: inline-block;
+	display: flex;
+	flex-wrap: wrap;
 	width: 691px;
 	vertical-align: top;
 	margin-top: 13px;
@@ -106,10 +110,14 @@ header .logo:last-child {
 	margin-right: 10px;
 }
 
+.tagline {
+	display: flex;
+}
+
 .tagline .cta-text {
-	display: inline-block;
+	/* display: inline-block; */
 	vertical-align: top;
-	margin-top: 120px;
+	margin: 120px 0 auto;
 	padding: 0px 75px;
 	font-size: 77px;
 	text-align: center;
@@ -131,7 +139,7 @@ header .logo:last-child {
 }
 
 .tagline img {
-	display: inline-block;
+	/* display: inline-block; */
 	margin-top: 69px;
 }
 
@@ -147,7 +155,8 @@ header .logo:last-child {
 
 .page-content .top-content .content-box {
 	width: 410px;
-	display: inline-block;
+	display: inline-flex;
+	flex-flow: column;
 	margin-right: 34px;
 }
 
@@ -166,7 +175,8 @@ header .logo:last-child {
 
 .page-content .bottom-content .content-box {
 	width: 275px;
-	display: inline-block;
+	display: inline-flex;
+	flex-flow: column;
 	margin-right: 12px;
 }
 
