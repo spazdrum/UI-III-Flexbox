@@ -154,6 +154,7 @@ header .logo:last-child {
     width: 100px;
     height: 30px;
     text-decoration: none;
+    margin-top: 15px;
 }
 
 .bottom-content {
